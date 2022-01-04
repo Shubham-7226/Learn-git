@@ -1,0 +1,157 @@
+        .customer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="customer">
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings five mb-3"></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te1.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings five mb-3"></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings five mb-3"></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings "></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te3.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings five mb-3"></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="item col-md-6 col-xl-4" style="">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <span class="ratings five mb-3"></span>
+                    <blockquote class="icon mb-0">
+                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor
+                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                            consectetur
+                            adipiscing elit.”</p>
+                        <div class="blockquote-details">
+                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
+                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
+                            <div class="info">
+                                <h5 class="mb-1">Nikolas Brooten</h5>
+                                <p class="mb-0">Sales Manager</p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
