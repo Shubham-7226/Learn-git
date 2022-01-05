@@ -1,406 +1,1073 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-        body {
-            margin: 0px 50px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .navbar {
-            /* display: flex; */
-            justify-content: space-between;
-            /* position: fixed; */
-        }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
+    body {
+      margin: 0px 50px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
 
-        }
+    .navbar a{
+      /* display: flex; */
+      /* justify-content: space-between; */
+      color:black;
+      /* position: fixed; */
+    }
 
-        #navbarNavDropdown {
-            margin-left: 350px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    .navbar{
+      background-color: aliceblue;
+    }
 
-            /* justify-content: space-between; */
-        }
+    #navbarNavDropdown {
+      margin-left: 350px;
 
-        #navbarDropdownMenuLink {
-            padding: 15px 10px;
-        }
+      /* justify-content: space-between; */
+    }
 
-        .card {
-            margin: 90px 0px;
-            border-style: none;
-            text-align: center;
-            align-items: center;
-        }
+    #navbarDropdownMenuLink {
+      padding: 15px 10px;
+    }
 
-        .card-body {
-            align-items: center;
-            padding-right: 100px;
-        }
+    .middle .card {
+      margin: 90px 0px;
+      border-style: none;
+      text-align: center;
+      align-items: center;
+    }
 
-        .card .row {
-            align-items: center;
-        }
+    .middle .card-body {
+      align-items: center;
+      padding-right: 100px;
+    }
 
-        .card-body h1 {
-            font-size: 50px;
-        }
+    .middle .card .row {
+      align-items: center;
+    }
 
-        #card-paragraph {
-            font-size: 20px;
-        }
+    .middle .card-body h1 {
+      font-size: 50px;
+    }
 
-        .advertisement {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 25px 0px;
-            /* display: inline-block; */
-        }
+    #card-paragraph {
+      font-size: 20px;
+    }
 
-        /* .company-img{ 
-            height:35px;
-        } */
-        .ads {
-            margin: 100px 0px;
-            text-align: center;
-        }
+    .advertisement {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px 0px;
+    }
 
-        .img-fluid-logo {
-            padding: 10px;
-            /* height:50px; */
-            width: 100px;
-        }
+    .ads {
+      margin: 100px 0px;
+      text-align: center;
+    }
 
-        .middle {
-            justify-content: center;
-        }
+    .img-fluid-logo {
+      padding: 10px;
+      width: 100px;
+    }
 
-        .design-label {
-            text-align: center;
-        }
+    .middle {
+      justify-content: center;
+    }
 
-        .customer {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    </style>
+    .design-label {
+      text-align: center;
+      width: 50%;
+      margin: auto;
+    }
+
+    .design-cards {
+      margin-top: 60px;
+    }
+
+    .design-cards .card-group {
+      /* margin: 0px 35px; */
+      border-style: none;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      /* padding: 35px; */
+    }
+
+    .design-cards .card {
+      padding: 50px;
+      border-style: none;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+
+    .card-footer {
+      text-align: center;
+      border-style: none;
+      background-color: transparent;
+    }
+
+    .card-footer a {
+      text-decoration: none;
+      color: #5eb9f0;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: 991px) {
+      .design-cards .card-group {
+        /* width: 80%; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .design-cards .card {
+        width: 80%;
+      }
+    }
+
+    .strategy {
+      margin: 100px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    #card-info {
+      text-align: left;
+      padding: 25px;
+      margin: 25px;
+      border-radius: 10px;
+      box-shadow: 20px #c8d9fc;
+      background-color: rgb(236, 236, 236);
+    }
+
+    .number {
+      background-color: #c8d9fc;
+      color: #5eb9f0;
+      border-radius: 50%;
+      padding: 15px;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+    }
+
+    .customer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .social a {
+      margin: 5px 10px;
+    }
+
+    #middle-cards {
+      padding: 50px;
+    }
+
+    .footer-section {
+      margin-top: 100px;
+      /* margin-bottom: 100px; */
+    }
+
+    .profiles .card {
+
+      margin: 25px;
+    }
+
+    .profiles .card-body {
+      text-align: left;
+    }
+
+    .customer .card {
+      height: auto;
+      margin: 25px;
+    }
+
+    .symbols {
+      /* background-color:black; */
+      width: 80%;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .change1:hover {
+      color: white
+    }
+    /* .footer-section{
+      margin-left:-50px;
+      margin-right: -50px;
+    } */
+    .footer-container .row{
+      /* align-content:space-between;
+       */
+       justify-content: center;
+    }
+    section{
+      margin-left:-50px;
+      margin-right: -50px;
+    }
+    .footer-container .row{
+      padding-bottom: 60px; width:80%; margin :auto;
+    }
+  </style>
 </head>
 
 <body>
-<<<<<<< HEAD
-    <p>hello in master</p>
-    <p>new change</p>
-    <p>git  stash</p>
-=======
-
-
-
-    <nav class="navbar navbar-expand-lg classic transparent navbar-light">
-
-        <div class="container container-fluid">
-            <a class="navbar-brand" href="#"> <img src="https://sandbox.elemisthemes.com/assets/img/logo-dark.png"
-                    alt="" width="100" height="24"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg classic fixed-top">
+    <div class="container container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://sandbox.elemisthemes.com/assets/img/logo-dark.png" alt="" width="100" height="24" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Demos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Blocks
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="contact">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="btn btn-primary" href="#">Pricing</a>
+            </ul>
+          </li>
+          <a class="nav-link active" aria-current="page" href="#">
+            <button class="btn" style="background-color: #5eb9f0; border-radius: 20px" type="submit">
+              Search
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Demos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Blocks
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Documentation
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="contact">
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="btn btn-primary" href="#">Pricing</a>
-                        </ul>
-                    </li>
-                    <a class="nav-link active" aria-current="page" href="#">
-                        <button class="btn" style="background-color:#5EB9F0; border-radius: 20px;"
-                            type="submit">Search</button>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                    </a>
-                </ul>
-            </div>
+  <div class="middle">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <div class="card-body">
+            <h1 class="card-title">A digital agency specializing on</h1>
+            <h1 id="#">Web Design</h1>
+            <p id="card-paragraph" class="card-text">
+              We are an award winning design agency that strongly believes in
+              the power of creative ideas.
+            </p>
+            <button class="btn btn-lg" style="background-color: #5eb9f0; border-radius: 20px" type="submit">
+              Get Started
+            </button>
+          </div>
         </div>
-    </nav>
-
-
-
-    <div class="middle">
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h1 class="card-title">A digital agency specializing on</h1>
-                        <h1 id="#">Web Design</h1>
-                        <p id="card-paragraph" class="card-text">We are an award winning design agency that strongly
-                            believes in the power of creative ideas.</p>
-                        <button class="btn btn-lg" style="background-color: #5EB9F0; border-radius: 20px;"
-                            type="submit">Get Started</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://sandbox.elemisthemes.com/assets/img/illustrations/i21@2x.png" id="sand-img"
-                        class="img-fluid rounded-start" alt="...">
-                </div>
-            </div>
+        <div class="col-md-6">
+          <img src="https://sandbox.elemisthemes.com/assets/img/illustrations/i21@2x.png" id="sand-img"
+            class="img-fluid rounded-start" alt="..." />
         </div>
-        <div class="ads">
-            <h4 style="color: rgb(100, 100, 100);">Trusted by over 2K+ clients across the world</h4>
-            <div class="advertisement">
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c1.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c2.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c3.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c4.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c5.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c6.png" alt="">
-                </div>
-                <div class="col"><img class="img-fluid-logo px-md-3 px-lg-0 px-xl-2 px-xxl-5"
-                        src="https://sandbox.elemisthemes.com/assets/img/brands/c7.png" alt="">
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
 
 
-    <div class="design-type">
-        <div class="design-label">
-            <h5 style="color:rgb(101, 228, 228)">WHAT WE DO?</h5>
-            <h2>The service we offer is specifically designed to meet your needs.</h2>
-        </div>
+    <div class="ads" style="margin-left:50px;margin-right:50px;">
+      <h4 style="color: rgb(100, 100, 100)">
+        Trusted by over 2K+ clients across the world
+      </h4>
+      <section class="container">
+      <div class="row py-5">
+        <div class="col-lg-2 col-sm-3 col-3">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c1.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          <div class="col-lg-2 col-sm-3 col-3">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c2.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          <div class="col-lg-2 col-sm-3 col-3 ">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c3.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          <div class="col-lg-2 col-sm-3 col-3 ">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c4.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          <div class="col-lg-2 col-sm-6 col-6">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c5.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          <div class="col-lg-2 col-sm-6 col-6">
+            <img src="https://sandbox.elemisthemes.com/assets/img/brands/c6.png" class="img-fluid rounded-start px-3" alt="...">
+          </div>
+          
+      </div>
+
+    </section>
+    </div>
+  </div>
+
+  <div class="design-type">
+    <div class="design-label">
+      <h5 style="color: rgb(101, 228, 228)">WHAT WE DO?</h5>
+      <h2 style="font-size: 42px">
+        The service we offer is specifically designed to meet your needs.
+      </h2>
     </div>
 
+    <div class="profiles" style="border-style: none; width: 90%; margin: auto;">
+      <div class="item col-md-6 col-lg-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+  
+              <div class="blockquote-details">
+                <img src=" https://sandbox.elemisthemes.com/assets/img/illustrations/i24.png"
+                  class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Web Design</h5>
+                  <p class="card-text">
+                    Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
 
- 
+      <div class="item col-md-6 col-lg-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+  
+              <div class="blockquote-details">
+                <img src="https://sandbox.elemisthemes.com/assets/img/illustrations/i19.png"
+                  class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design</h5>
+                  <p class="card-text">
+                    Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="item col-md-6 col-lg-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+  
+              <div class="blockquote-details">
+                <img src="https://sandbox.elemisthemes.com/assets/img/illustrations/i18.png"
+                  class="card-img-top rounded-circle" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">3D Animation</h5>
+                  <p class="card-text">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="strategy">
+    <div class="col-lg-6">
+      <h5 style="color: #5eb9f0">OUR STRATEGY</h5>
+      <h1 style="padding: 20px 0px">
+        Here are 3 working steps to organize our projects.
+      </h1>
+      <h5>
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+        vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id
+        dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget
+        urna mollis. <br /><br />
+
+        Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id
+        ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed
+        consectetur.
+      </h5>
+      <br />
+      <button class="btn btn-lg" style="background-color: #5eb9f0; border-radius: 20px" type="submit">
+        Learn more
+      </button>
+    </div>
+
+    <div class="col-lg-6" id="info-center">
+      <div class="card-body p-6" id="card-info">
+        <div class="d-flex flex-row">
+          <div>
+            <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span
+                class="number">01</span></span>
+          </div>
+          <div>
+            <h4 class="mb-1">Collect Ideas</h4>
+            <p class="mb-0">
+              Nulla vitae elit libero pharetra augue dapibus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body p-6" id="card-info">
+        <div class="d-flex flex-row">
+          <div>
+            <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span
+                class="number">02</span></span>
+          </div>
+          <div>
+            <h4 class="mb-1">Data Analysis</h4>
+            <p class="mb-0">Vivamus sagittis lacus vel augue laoreet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body p-6" id="card-info">
+        <div class="d-flex flex-row">
+          <div>
+            <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span
+                class="number">03</span></span>
+          </div>
+          <div>
+            <h4 class="mb-1">Finalize Product</h4>
+            <p class="mb-0">Cras mattis consectetur purus sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://sandbox.elemisthemes.com/assets/img/illustrations/i21@2x.png" id="sand-img"
+            class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-6" id="middle-cards">
+          <div class="card-body" style="text-align: left;">
+            <h4>WHY CHOOSE US?</h4>
+            <h1 class="card-title">We bring solutions to make life easier.</h1>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Professional Design
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Top-Notch Support
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                  being filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Header and Slider Options
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the space to make it look, at least at first
+                  glance, a bit more representative of how this would look in a real-world application.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="symbols ">
+    <div class="row ">
+      <div class="col-lg-4 text-center text-lg-start">
+        <h2 class="fs-16 text-uppercase text-primary mb-3">Company Facts</h2>
+        <h3 class="display-6 mb-4 pe-xxl-5">We are proud of our design team</h3>
+        <p class="mb-0 ">Just sit back and relax while we take care of your business needs for you.</p>
+      </div>
+
+      <div class="col-lg-8 mt-lg-2">
+        <div class="row align-items-center counter-wrapper gy-6 text-center">
+          <div class="col-md-4">
+            <div> <img class="pb-3"
+                src="https://nanophorm.com/wp-content/uploads/2018/04/google-logo-icon-PNG-Transparent-Background.png"
+                style="width: 40px;" alt=""></div>
+            <h3 class="counter" style="visibility: visible;">1000+</h3>
+            <p>Completed Projects</p>
+          </div>
+
+          <div class="col-md-4">
+            <div> <img class="pb-3"
+                src="https://www.clipartmax.com/png/middle/185-1854464_facebook-logo-png-transparent-background.png"
+                style="width: 50px;" alt=""></div>
+
+            <h3 class="counter">50K+</h3>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="col-md-4">
+            <div> <img class="pb-3"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX4g8sDbVGF0NVypbTURoNbaeIjXe-oLE1Q&usqp=CAU"
+                style="width: 50px;" alt=""></div>
+
+            <h3 class="counter" style="visibility: visible;">20+</h3>
+            <p>Awards Won</p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="profiles">
+    <div class="item col-md-6 col-xl-3">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <span class="ratings five mb-3"></span>
+          <blockquote class="icon mb-0">
+
+            <div class="blockquote-details">
+              <img src=" https://sandbox.elemisthemes.com/assets/img/avatars/te1.jpg"
+                class="card-img-top rounded-circle" alt="..." style="width: 100px" />
+              <div class="card-body">
+                <h5 class="card-title">Jackie Sanders</h5>
+                <h6>INVESTMENT PLANNER</h6>
+                <p class="card-text">
+                  Fermentum massa justo sit amet risus morbi leo.
+                </p>
+              </div>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </nav>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="item col-md-6 col-xl-3" style="">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <span class="ratings five mb-3"></span>
+          <blockquote class="icon mb-0">
+
+            <div class="blockquote-details">
+              <img src=" https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
+                class="card-img-top rounded-circle" alt="..." style="width: 100px" />
+              <div class="card-body">
+                <h5 class="card-title">Cory Zamora</h5>
+                <h6>INVESTMENT PLANNER</h6>
+                <p class="card-text">
+                  Fermentum massa justo sit amet risus morbi leo.
+                </p>
+              </div>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </nav>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="item col-md-6 col-xl-3" style="">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <span class="ratings five mb-3"></span>
+          <blockquote class="icon mb-0">
+
+            <div class="blockquote-details">
+              <img src=" https://sandbox.elemisthemes.com/assets/img/avatars/te3.jpg"
+                class="card-img-top rounded-circle" alt="..." style="width: 100px" />
+              <div class="card-body">
+                <h5 class="card-title">Nikolas Brooten</h5>
+                <h6>INVESTMENT PLANNER</h6>
+                <p class="card-text">
+                  Fermentum massa justo sit amet risus morbi leo.
+                </p>
+              </div>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </nav>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="item col-md-6 col-xl-3" style="">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <span class="ratings five mb-3"></span>
+          <blockquote class="icon mb-0">
+
+            <div class="blockquote-details">
+              <img src=" https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
+                class="card-img-top rounded-circle" alt="..." style="width: 100px" />
+              <div class="card-body">
+                <h5 class="card-title">Coriss Ambady</h5>
+                <h6>INVESTMENT PLANNER</h6>
+                <p class="card-text">
+                  Fermentum massa justo sit amet risus morbi leo.
+                </p>
+              </div>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </nav>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div class="owl-carousel owl-theme d-flex" style="justify-content: center;">
+  <div class="item" >
+     <img src="https://sandbox.elemisthemes.com/assets/img/photos/sp5.jpg" style="width:500px" alt="">
+  </div>
+  
+</div>
+
+
+
+  <div class="footer-section" style="text-align:center;">
+    <h3 style="color:#5eb9f0;">HAPPY CUSTOMERS</h3>
+    <h1>Don't take our word for it. See what customers are saying about us.</h1>
     <div class="customer">
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings five mb-3"></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te1.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
+      <div class="item col-md-6 col-xl-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis
+                euismod semper.
+                Cras justo odio dapibus facilisis sociis natoque penatibus faucibus dolor auctor. Cras mattis
+                consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed.faucibus dolor auctor. Cras
+                mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed."
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te1.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
                 </div>
-            </div>
+              </div>
+            </blockquote>
+          </div>
         </div>
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings five mb-3"></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
+      </div>
+      <div class="item col-md-6 col-xl-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus
+                sagittis lacus vel
+                augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean
+                lacinia bibendum
+                nulla sed.”
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
                 </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="item col-md-6 col-xl-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                auctor. Nullam quis
+                risus eget porta ac consectetur vestibulum.faucibus dolor auctor. Cras mattis consectetur purus sit amet
+                fermentum. Aenean lacinia bibendum nulla sed.faucibus dolor auctor. Cras mattis consectetur purus sit
+                amet fermentum. Aenean lacinia bibendum nulla sed. Donec sed odio dui consectetur adipiscing elit.”
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="item col-md-6 col-xl-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam
+                eu sagittis
+                mauris. Donec non dolor ac elit aliquam tincidunt at at sapien.”
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te3.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="item col-md-6 col-xl-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.”
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="item col-md-6 col-xl-4" style="">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <span class="ratings five mb-3"></span>
+            <blockquote class="icon mb-0">
+              <p>
+                “Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis
+                montes,
+                nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero.”
+              </p>
+              <div class="blockquote-details">
+                <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
+                  srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
+                <div class="info">
+                  <h5 class="mb-1">Nikolas Brooten</h5>
+                  <p class="mb-0">Sales Manager</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="footer-end">
+      <div class="card mb-3">
+        <div class="row g-0" style="align-items: center; padding:30px;">
+          <div class="col-md-6" style="text-align:left">
+            <h5 style="color: #5eb9f0;">FAQ</h5>
+            <h1 style="margin-top:20px; margin-bottom: 20px;">
+              If you don't see an answer to your question, you can send us an email from our contact form</h1>
+            <h4>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam
+              quis risus eget
+              urna mollis ornare.</h4>
+            <button style="padding:10px 25px; border-radius: 20px; background-color:#5eb9f0">All FAQ</button>
+          </div>
+          <div class="col-md-6" id="middle-cards">
+            <div class="card-body" style="text-align: left;">
+              <h4>WHY CHOOSE US?</h4>
+              <h1 class="card-title">We bring solutions to make life easier.</h1>
             </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Professional Design
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Top-Notch Support
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                    being filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Header and Slider Options
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section
+      style="background-color: #343F52;color:white; ">
+      <div class="footer-container" style="padding-top: 100px;">
+        <div class="row" style="">
+          <div class="col-lg-6 col-sm-12">
+            <h1>Join our community by using our services and grow your business.</h1>
+          </div>
+          <div class="col-lg-6 col-sm-12" >
+            <button style="background-color:#5eb9f0;  border: none; margin-left:50px;padding: 20px 50px; border-radius: 20px;">try
+              it for free</button>
+          </div>
         </div>
 
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings five mb-3"></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
+        <div class="row" style="text-align: left; width:80%; margin :auto; margin-top:20px;margin-bottom:20px;">
+          <div class="col-lg-3 col-sm-12" style="text-align: left;">
+            <h4 style="color: white;">Sand box</h4>
+            <h5 class="change1">© 2021 Sandbox.</h5>
+            <h5 class="change1">All rights reserved.</h5>
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <h4 style="color: white;"> Get in Touch</h4>
+            <h5 class="change1">Moonshine St. 14/05</h5>
+            <h5 class="change1">Light City, London,</h5>
+            <h5 class="pb-2 change1">United Kingdom</h5>
+            <h5 class="change1">info@email.com</h5>
+            <h5 class="change1">+00 (123) 456 78 90</h5>
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <h4 style="color: white;"> learn more</h4>
+            <h5 class="change1">abour us</h5>
+            <h5 class="change1">our storys</h5>
+            <h5 class="change1">projects</h5>
+            <h5 class="change1">term of us</h5>
+            <h5 class="change1">Privacy Policy</h5>
+
+          </div>
+
+          <div class="col-lg-3 col-sm-12">
+            <h4 style="color: white;"> Our Newsletter</h4>
+            <h5 class="change1">Subscribe to our newsletter to get our news & deals delivered to you.</h5>
+
+          </div>
         </div>
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings "></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te3.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings five mb-3"></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te4.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-        <div class="item col-md-6 col-xl-4" style="">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <span class="ratings five mb-3"></span>
-                    <blockquote class="icon mb-0">
-                        <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor
-                            auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
-                            consectetur
-                            adipiscing elit.”</p>
-                        <div class="blockquote-details">
-                            <img class="rounded-circle w-12" src="https://sandbox.elemisthemes.com/assets/img/avatars/te2.jpg"
-                                srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="">
-                            <div class="info">
-                                <h5 class="mb-1">Nikolas Brooten</h5>
-                                <p class="mb-0">Sales Manager</p>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
->>>>>>> branch1
+      </div>
+    </section>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+          stagePadding: 50,
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 3
+            },
+            1000: {
+              items: 5
+            }
+          }
+        })
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
